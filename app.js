@@ -10,10 +10,10 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var catalogRouter = require("./routes/catalog");
 const helmet = require("helmet");
-const RateLimit = require("express-rate-limit");
 const compression = require("compression");
 var app = express();
 
+const RateLimit = require("express-rate-limit");
 const limiter = RateLimit({
   windowMs: 1 * 60 * 1000, // 1 minute
   max: 50,
