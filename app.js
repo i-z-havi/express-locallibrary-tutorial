@@ -1,7 +1,7 @@
 require("dotenv").config();
 var createError = require("http-errors");
 var path = require("path"); //node library for parsing file/directory paths
-const RateLimit = require("express-rate-limit");
+var RateLimit = require("express-rate-limit");
 var express = require("express");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
